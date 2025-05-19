@@ -2,6 +2,7 @@ import { Post } from "../types/post";
 
 export const posts: Post[] = [
   {
+    id: "",
     title: "Understanding JavaScript Closures",
     slug: "js-closures",
     description: "A simple explanation of closures in JavaScript.",
@@ -9,6 +10,7 @@ export const posts: Post[] = [
     date: "2025-04-10",
   },
   {
+    id: "",
     title: "CSS Grid vs Flexbox",
     slug: "css-grid-vs-flexbox",
     description: "Which one should you use and when?",
@@ -16,6 +18,7 @@ export const posts: Post[] = [
     date: "2025-04-15",
   },
   {
+    id: "",
     title: "10 VS Code Extensions for Web Developers",
     slug: "vscode-extensions-webdev",
     description: "Boost your productivity with these essential extensions.",
@@ -23,6 +26,7 @@ export const posts: Post[] = [
     date: "2025-04-12",
   },
   {
+    id: "",
     title: "A Beginner’s Guide to React Hooks",
     slug: "react-hooks-guide",
     description: "An intro to useState, useEffect, and beyond.",
@@ -30,6 +34,7 @@ export const posts: Post[] = [
     date: "2025-03-28",
   },
   {
+    id: "",
     title: "TypeScript: Why You Should Care",
     slug: "typescript-why",
     description: "A quick pitch for TypeScript in your next project.",
@@ -37,6 +42,7 @@ export const posts: Post[] = [
     date: "2025-04-01",
   },
   {
+    id: "",
     title: "Deploying Your Next.js App to Vercel",
     slug: "nextjs-vercel-deploy",
     description: "Go from local dev to production in minutes.",
