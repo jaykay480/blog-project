@@ -1,11 +1,19 @@
-import Image from "next/image";
+import Card from "@/components/Card";
+import { posts } from "./posts/posts";
 
+function getRandomUniquePosts(count: number) {
+  const shuffled = [...posts].sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, count);
+}
 export default function Home() {
+  const cardsToRender = 6;
+  const selectedPosts = getRandomUniquePosts(cardsToRender);
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        Welcome to my blog page
-      </div>
-    </main>
+    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 xl:overflow-auto gap-10 pb-4 mt-20">
+      {selectedPosts.map((post) => (
+        <Card key={post.id} post={post} />
+      ))}
+    </div>
   );
 }
