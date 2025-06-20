@@ -24,12 +24,13 @@ export default function ContactPage() {
   return (
     <div className="max-w-xl mx-auto px-6 py-16">
       <h1 className="text-4xl font-bold mb-6 text-lamaPurple">Contact Us</h1>
+
       {submitted ? (
-        <p className="text-green-600 text-lg">
+        <p className="text-green-600 text-lg mb-8">
           Thank you for reaching out! We will get back to you soon.
         </p>
       ) : (
-        <form onSubmit={handleSubmit} className="space-y-6">
+        <form onSubmit={handleSubmit} className="space-y-6 mb-10">
           <div>
             <label
               htmlFor="name"

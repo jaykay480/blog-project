@@ -1,5 +1,4 @@
 import React, { useMemo } from "react";
-import { posts } from "@/app/posts/posts";
 import Link from "next/link";
 import { formatDate } from "@/utils/formatDate";
 import { Post } from "@/app/types/post";
