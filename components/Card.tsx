@@ -1,4 +1,3 @@
-import React, { useMemo } from "react";
 import Link from "next/link";
 import { formatDate } from "@/utils/formatDate";
 import { Post } from "@/app/types/post";
@@ -6,6 +5,7 @@ import { Post } from "@/app/types/post";
 type CardProps = {
   post: Post;
 };
+
 export default function Card({ post }: CardProps) {
   return (
     <div className="relative row-span-3 xl:row-span-6 shadow-md rounded-2xl pb-16 mt-2 mx-2 bg-white">
