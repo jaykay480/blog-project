@@ -10,7 +10,7 @@ export default function Home() {
   const selectedPosts = getRandomUniquePosts(cardsToRender);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 xl:overflow-auto gap-10 pb-4 mt-20">
+    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 xl:overflow-auto mt-6 gap-10 pb-4 max-w-7xl mx-auto px-4">
       {selectedPosts.map((post) => (
         <Card key={post.id} post={post} />
       ))}
